@@ -14,16 +14,19 @@ console.log('================是否开启调试模式=================');
 
 module.exports = {
 	devtool: 'inline-source-map',
+
 	entry: {
 		app: __dirname + '/app/app.js',
 		sidebar: __dirname + '/app/sidebar/app.js'
 	},
+
 	output: {
 		path: __dirname + '/build',
 		filename: '[name].js',
 		chunkFilename: '[id].chunk.js',
 		publicPath: '/build/'
 	},
+
 	module: {
 		loaders: [
 			{test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
