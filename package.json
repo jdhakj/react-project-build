@@ -1,0 +1,82 @@
+{
+  "name": "webpack-for-react-project-build",
+  "version": "1.0.0",
+  "description": "基于webpack的react项目构建",
+  "files": [
+    "*.md",
+    "docs",
+    "es6",
+    "lib",
+    "npm-scripts",
+    "umd"
+  ],
+  "main": "lib/index",
+  "jsnext:main": "es6/index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jdhakj/react-project-build.git"
+  },
+  "homepage": "https://github.com/jdhakj/react-project-build.git",
+  "scripts": {
+    "start": "set NODE_ENV=pro && webpack -p --progress --colors --display-error-details"
+  },
+  "authors": [
+    "githubyang",
+    "Marszed"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "invariant": "^2.0.0",
+    "warning": "^2.0.0"
+  },
+  "peerDependencies": {
+    "history": "^1.12.0"
+  },
+  "devDependencies": {
+    "babel": "^5.4.7",
+    "babel-core": "^5.8.22",
+    "babel-eslint": "^3.1.23",
+    "babel-loader": "^5.3.2",
+    "babel-plugin-dev-expression": "^0.1.0",
+    "bundle-loader": "^0.5.2",
+    "coveralls": "^2.11.4",
+    "css-loader": "^0.19.0",
+    "eslint": "^1.7.3",
+    "eslint-config-rackt": "^1.1.0",
+    "eslint-plugin-react": "^3.6.3",
+    "expect": "^1.12.0",
+    "express": "^4.13.3",
+    "express-urlrewrite": "^1.2.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "gzip-size": "^3.0.0",
+    "history": "^1.12.5",
+    "html-webpack-plugin": "^2.8.2",
+    "image-webpack-loader": "^1.6.1",
+    "less": "^2.6.1",
+    "less-loader": "^2.2.3",
+    "node-sass": "^3.4.2",
+    "react": "^0.14.3",
+    "react-addons-css-transition-group": "^0.14.3",
+    "react-addons-test-utils": "0.14.3",
+    "react-dom": "^0.14.3",
+    "react-router": "1.0.0",
+    "react-static-container": "^1.0.0",
+    "sass-loader": "^3.2.0",
+    "scss-loader": "0.0.1",
+    "style-loader": "^0.12.4",
+    "webpack": "^1.4.13",
+    "webpack-dev-middleware": "^1.2.0"
+  },
+  "tags": [
+    "react",
+    "router"
+  ],
+  "keywords": [
+    "react",
+    "react-component",
+    "routing",
+    "route",
+    "routes",
+    "router"
+  ]
+}
