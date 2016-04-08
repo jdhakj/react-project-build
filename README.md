@@ -29,5 +29,6 @@
 
 ##Tips
 
-Strongly recommend the use of nginx to do front-end project reverse proxy
+please visit http://localhost:3000/
+
 
