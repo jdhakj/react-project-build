@@ -12,6 +12,7 @@ const history = useBasename(createHashHistory)({
   basename: '/'
 })
 
+
 const rootRoute = {
   component: 'div',
   childRoutes: [ {
