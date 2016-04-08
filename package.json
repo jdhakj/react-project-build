@@ -19,7 +19,7 @@
   "scripts": {
     "start": "set NODE_ENV=development && node server.js",
     "build-pro": "NODE_ENV=production && webpack -p --progress --colors --display-error-details",
-    "build-dev": "set NODE_ENV=development && webpack -p --progress --colors --display-error-details"
+    "build-dev": "set NODE_ENV=development && webpack --progress --colors --display-error-details"
   },
   "authors": [
     "githubyang",
