@@ -7,8 +7,6 @@ console.log('>>>>>>>>>================配置环境=================<<<<<<<<');
 console.log('');
 console.log('location route: '+__dirname);
 console.log('location environment: '+process.env.NODE_ENV);
-console.log('');
-console.log('>>>>>>>>>================配置环境=================<<<<<<<<');
 
 module.exports = {
 	devtool: 'inline-source-map',
@@ -94,4 +92,5 @@ webpack -p    //压缩混淆脚本，这个非常非常重要！
 webpack -d    //生成map映射文件，告知哪些模块被最终打包到哪里了
 
 webpack --display-error-details //方便出错时能查阅更详尽的信息*/
+
 

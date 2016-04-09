@@ -11,7 +11,7 @@ new WebpackDevServer(webpack(config), {
   if (err) {
     console.log(err);
   }
-  console.log('================监听地址=================');
   console.log('Listening at localhost:'+port);
-  console.log('================监听地址=================');
+  console.log('');
+  console.log('>>>>>>>>>================配置环境=================<<<<<<<<');
 });

@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/jdhakj/react-project-build.git",
   "scripts": {
-    "start": "set NODE_ENV=development && node server.js",
-    "build-pro": "NODE_ENV=production && webpack -p --progress --colors --display-error-details",
-    "build-dev": "set NODE_ENV=development && webpack --progress --colors --display-error-details"
+    "start": "export NODE_ENV=development && node server.js",
+    "build-pro": "export NODE_ENV=production && webpack -p --progress --colors --display-error-details",
+    "build-dev": "export NODE_ENV==development && webpack --progress --colors --display-error-details"
   },
   "authors": [
     "githubyang",

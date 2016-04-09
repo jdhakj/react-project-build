@@ -1,6 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { browserHistory, Router, Route, Link } from 'react-router'
+import { Router, Route, Link} from 'react-router'
+import { createHistory, useBasename,createHashHistory } from 'history'
 import data from './data'//读取模拟数据
 import './app.css'//加载组件样式
 

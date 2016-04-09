@@ -132,3 +132,9 @@ webpack -d    //生成map映射文件，告知哪些模块被最终打包到哪�
 
 webpack --display-error-details //方便出错时能查阅更详尽的信息*/
 ```
+
+## NODE_ENV SET
+
+window: SET NODE_ENV=development
+
+OS-X or Linux: export NODE_ENV=development
