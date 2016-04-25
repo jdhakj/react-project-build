@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+.form-wrap{
+    $form-height: 38px !default;
+    $control-label: 130px !default;
+    .form-group{
+        margin-bottom: 20px;
+        @include clearfix;
+    }
+    .control-label{
+        float: left;
+        line-height: $form-height;
+        text-align: right;
+        margin-right: 10px;
+        width: $control-label;
+    }
+    .form-content{
+        display: inline-block;
+    	line-height: $form-height;
+        overflow: hidden;
+    }
+    .form-control{
+        padding: 8px 10px;
+        @include placeholder(#555);
+    }
+    select{
+        height: $form-height;
+        width: 120px;
+    }
+    .control-textarea{
+        padding: 10px;
+        vertical-align: top;
+        height: 100px;
+        width: 460px;
+    }
+    .help-block{
+        display: inline-block;
+        *display: inline;
+        color: #c00;
+        line-height: $form-height;
+        margin-left: 10px;
+        white-space: nowrap;
+        vertical-align: top;
+    }
+    .offset{
+        margin-left: $control-label + 10px;
+    }
+    .btn{
+        line-height: $form-height;
+        padding: 0 25px;
+        margin-right: 16px;
+    }
+    .btn-default{
+    	line-height: $form-height - 2px;
+    }
+    .has-error{
+        .form-control{
+            background-color: #fae5e5;
+            border-color: #db8a83;
+            color: #c5736b;
+        }
+    }
+    .has-success{
+        .form-control{
+            border-color: #70b600;
+            color: #70b600;
+        }
+    }
+    .active{
+        .form-control{
+            background-color: #eaf6ff;
+            border-color: #6bc3f8;
+            color: #41c7f9;
+        }
+    }
+}
+
+.form-inline{
+	.form-group,.control-label,.form-content{
+		display: inline-block;
+		vertical-align: top;
+	}
+    .form-group{
+        margin-right: 20px;
+    }
+    .control-label{
+    	float: none;
+    	width: auto;
+    }
+}
