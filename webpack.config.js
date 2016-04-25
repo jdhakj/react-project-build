@@ -15,7 +15,8 @@ module.exports = {
 		'webpack-dev-server/client?http://127.0.0.1:3000',//端口号必须与node服务的端口号一致,用以接收Webpack推送过来的代码模块
 		'webpack/hot/only-dev-server',//进而可以通知所有相关React组件进行重新Render
 		'./app/demo/app.js',
-		'./app/sidebar/app.js'
+		'./app/sidebar/app.js',
+		'./app/gigold/index.js'
 	],
 	//==========打包后的出口
 	output: {
@@ -65,7 +66,6 @@ module.exports = {
 		new webpack.HotModuleReplacementPlugin(),
 		new webpack.NoErrorsPlugin(),
 		new ExtractTextPlugin("global.css", []),//提取公共样式模块
-		new webpack.HotModuleReplacementPlugin(),
 		new webpack.optimize.CommonsChunkPlugin("common.js", [])// 提取公共js模块
 		/*new HtmlWebpackPlugin(
 			{// 编译html模板
